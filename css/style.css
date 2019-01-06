@@ -7,35 +7,33 @@ body {
   margin: 0;
 }
 
+
 body, td, a, p, .h {
     font-family: arial,sans-serif;
 }
 
+.header_icon_big {
+	width: 32px;
+	height: 32px;
+}
+
+.header_icon_medium {
+	width: 24px;
+	height: 24px;
+}
+
 div.imagem_logo {
 	/*height: 273px;*/
-	margin-top: 93px;
 	/*width: 50%;*/
+	/*margin-top: 93px;*/
+	margin-top: 205px;
 	left: 40%;
 	position: absolute;
 
-	/*
-	border: 1px solid red;
-	*/
+	/*border: 1px solid red;*/
 }
 
-/*
-div.texto {
-	margin-top: 50px;
-	font-family: arial,sans-serif;
-	width: 100%;
-	border: 1px solid red;
-
-	
-}
-*/
 input.texto {
-	
-
 	background-color: transparent;
 	border: none;
 	margin: 0;
@@ -45,13 +43,15 @@ input.texto {
 	outline: none;
 	display: flex;
 	flex: 100%;
+    line-height: normal;
 	line-height: 34px;
 	height: 34px !important;
 
 	margin-top: 50px;
 	font-family: arial,sans-serif;
 	width: 100%;
-	/*box-shadow: 10px 10px;*/
+
+	font: 16px arial,sans-serif;
 
 	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
@@ -73,8 +73,53 @@ div.botao {
 
 }
 
+img#camera {
+	flex: 1 0 auto;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	border: 0;
+	background: transparent;
+	outline: none;
+	padding: 0 8px;
+	font-size: small;
+	font-family: arial,sans-serif;
+}
+
+img#search_icon {
+	color: #4285f4;
+	/*🔍*/
+}
+
+span img:hover {
+	cursor: pointer;
+	line-height: 44px;
+}
+
+image.imagemBotaoSpan {
+	height: 24px;
+    width: 24px;
+    background-size: auto auto;
+    background-size: 24px;
+}
+
+span.imagemBotaoSpan {
+	height: 24px;
+	width: 24px;
+	vertical-align: middle;
+}
+
+div.painelAlternativo {
+	/*border: 1px solid green;*/
+	width: 5%;
+	position: relative;
+	top: -25px;
+  	left: 560px;
+  	z-index: 10;
+}
+
 input.botao {
-	text-decoration: bold;
+	/*text-decoration: bold;*/
 	background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
 
 	-moz-user-select: none;
@@ -100,6 +145,8 @@ div#search_form {
 	vertical-align: center;
 	width: 100%;
   	text-align: center;
+  	/*margin-top: 118px;*/
+  	margin-top: 230px;
 
 }
 
@@ -118,8 +165,10 @@ form {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 100;
- 
+  padding: 7px;
+ }
+
+ul.footer_list {
   overflow: hidden;
   /*background-color: #f1f1f1;*/
   background-color: #f2f2f2;
@@ -129,51 +178,133 @@ ul {
 
 }
 
+
+
 div#footer {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-li {
-  /*display: inline;*/
+li.footer_list {
   color: rgba(0,0,0,.54);
   float: left;
-  text-decoration: none;
-  /*padding: 10px;*/
   padding: 10px 12px;
   font-size: 15px;
   font-family: arial, sans-serif;
 }
 
-li a {
+li a.footer_link {
   display: block;
   font-size: small;
-  /*color: #000;*/
   text-decoration: none;
-  text-decoration: bold;
-  /*padding: 10px 12px;*/
   color: #5f6368;
 }
 
-div#left_list{
+/*
+li a:hover {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}*/
+
+a.footer_link:hover {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+/*
+ul.footer_list li#left_list{
+
 	left: 0;
 }
 
-div#right_list{
+ul.footer_list li#right_list{
+	position: absolute;
+ 	right: 0;
+}*/
+
+
+div.lista {
+	width: 100vw;
+	background-color: #f2f2f2;
+	/*border: 1px solid blue;*/
+	border-bottom: 1px solid #e4e4e4;
+}
+
+
+
+div#list_of_list ul {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+ul#right_list {
 	position: absolute;
  	right: 0;
 }
 
-li a:hover {
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+
+li.header_link {
+  color: rgba(0,0,0,.54);
+  float: left;
+  padding: 10px 10px;
+  font-size: 13px;
+  font-family: arial, sans-serif;
 }
 
-div.lista {
-	float: bottom;
-	/*margin-top: 400px*/
-	/*width: 158.4%*/
-	width: 100vw;
+#google_icon{
+	height: 32px;
+	width: 32px;
+	background-size: 32px 32px;
+	border-radius: 50%;
+	margin: -1px;
+	overflow: hidden;
+	z-index: 0;
 }
+
+li.header_link img:hover {
+	cursor: pointer;
+}
+
+div#header_painel {
+	position: absolute;
+ 	right: 0;
+
+	line-height: 24px;
+	outline: none;
+
+	font-family: arial,sans-serif;
+
+	text-align: right;
+
+	font-size: 13px;
+	display: inline-block;
+	/*border: 1px solid green;
+	vertical-align: middle;*/
+}
+
+ul.header_list {
+  overflow: hidden;
+  color: rgba(0,0,0,0.87);
+}
+
+li a.header_link:hover {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	color: rgba(0,0,0,1);
+	cursor: pointer;
+	font-family: arial,sans-serif;
+	/*border: 1px solid red;*/
+}
+
+li a.header_link  {
+	color: rgba(0,0,0,0.87);
+	text-decoration: none;
+	display: block;
+	font-family: arial,sans-serif;
+}
+
+
+
 
