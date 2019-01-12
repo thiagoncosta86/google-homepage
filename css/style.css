@@ -47,6 +47,8 @@ input.texto {
 	line-height: 34px;
 	height: 34px !important;
 
+	text-indent: 15px;
+
 	margin-top: 50px;
 	font-family: arial,sans-serif;
 	width: 100%;
@@ -59,8 +61,8 @@ input.texto {
 }
 
 div.botao {
-	/*display: inline;
-	border: 1px solid black;*/
+	/*display: inline;*/
+	/*border: 1px solid black;*/
 
 	padding-top: 20px;
 	
@@ -86,10 +88,7 @@ img#camera {
 	font-family: arial,sans-serif;
 }
 
-img#search_icon {
-	color: #4285f4;
-	/*🔍*/
-}
+
 
 span img:hover {
 	cursor: pointer;
@@ -138,6 +137,12 @@ input.botao {
 
 	height: 36px;
 	line-height: 27px;
+}
+
+input.botao:hover {
+	cursor: pointer;
+	border: 1px solid #9F9F9F;
+	color: #000000;
 }
 
 div#search_form {
@@ -201,27 +206,11 @@ li a.footer_link {
   color: #5f6368;
 }
 
-/*
-li a:hover {
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-}*/
 
 a.footer_link:hover {
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
-/*
-ul.footer_list li#left_list{
-
-	left: 0;
-}
-
-ul.footer_list li#right_list{
-	position: absolute;
- 	right: 0;
-}*/
-
 
 div.lista {
 	width: 100vw;
@@ -304,7 +293,3 @@ li a.header_link  {
 	display: block;
 	font-family: arial,sans-serif;
 }
-
-
-
-
